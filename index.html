@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول ورديات وساعات عمل محل الموضة</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+            color: #111;
+            font-size: 28px;
+        }
+        .header p {
+            margin: 0;
+            color: #666;
+            font-size: 16px;
+        }
+        .schedule-section {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+        }
+        .schedule-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .title-sاهر { color: #0056b3; }
+        .title-مريم { color: #d63384; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: center;
+            font-size: 15px;
+        }
+        th {
+            background-color: #f1f3f5;
+            color: #111;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #fdfdfd;
+        }
+        .status-on {
+            color: #2b8a3e;
+            font-weight: bold;
+            background-color: #ebfbee;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .status-off {
+            color: #c92a2a;
+            font-weight: bold;
+            background-color: #fff5f5;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .status-all {
+            color: #e67e22;
+            font-weight: bold;
+            background-color: #fdf6ec;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .total-hours {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: left;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- رأس الصفحة -->
+        <div class="header">
+            <h1>✨ مـــحـــل الــمــوضــة ✨</h1>
+            <p>النظام الداخلي لتنظيم ساعات وأيام العمل الأسبوعية للورديات</p>
+        </div>
+
+        <!-- جدول مريم -->
+        <div class="schedule-section">
+            <div class="schedule-title title-مريم">🌸 جدول مواعيد العمل الرسمية - مريم</div>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>اليوم</th>
+                            <th>حالة الوردية</th>
+                            <th>ساعات العمل</th>
+                            <th>المهام والمسؤوليات الأساسية</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>السبت</b></td>
+                            <td><span class="status-on">🟢 شغال</span></td>
+                            <td>من 10:00 صباحاً إلى 4:00 عصراً</td>
+                            <td>فتح المحل، تشغيل الإضاءة واليد، واستقبل زباين الصباح.</td>
+                        </tr>
+                        <tr>
+                            <td><b>الأحد</b></td>
+                            <td><span class="status-on">🟢 شغال</span></td>
+                            <td>من 10:00 صباحاً إلى 4:00 عصراً</td>
+                            <td>ترتيب وتنسيق معروضات الرفوف وقسم الميك أب.</td>
+                        </tr>
+                        <tr>
+                            <td><b>الاثنين</b></td>
+                            <td><span class="status-on">🟢 شغال</span></td>
+                            <td>من 10:00 صباحاً إلى 4:00 عصراً</td>
+                            <td>استقبال بضاعة الصباح الجديدة ومساعدة الزباين.</td>
+                        </tr>
+                        <tr>
+                            <td><b>الثلاثاء</b></td>
+                            <td><span class="status-off">🔴 إجازة</span></td>
+                            <td>-------</td>
+                            <td>الإجازة الأسبوعية الرسمية لمريم.</td>
+                        </tr>
+                        <tr>
+                            <td><b>الأربعاء</b></td>
+                            <td><span class="status-on">🟢 شغال</span></td>
+                            <td>من 10:00 صباحاً إلى 4:00 عصراً</td>
+                            <td>البيع السريع وإعداد تقرير تسليم عهدة نصف اليوم.</td>
+                        </tr>
+                        <tr>
+                            <td><b>الخميس</b></td>
+                            <td><span class="status-on">🟢 شغال</span></td>
+                            <td>من 10:00 صباحاً إلى 4:00 عصراً</td>
+                            <td>تجهيز المحل وعرض التيسترات لاستقبال زحمة الويك إند.</td>
+                        </tr>
+                        <tr>
+                            <td><b>الجمعة</b></td>
+                            <td><span class="status-off">🔴 إجازة</span></td>
+                            <td>-------</td>
+                            <td>إجازة أسبوعية للمحل بالكامل وشحن الطاقة.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="total-hours">📊 إجمالي ساعات العمل الأسبوعية: 30 ساعة شغل.</div>
+        </div>
+
+        <!-- الحقوق والتقفيل -->
+        <div class="footer">
+            ⚙️ نظام تنظيم الإدارة الداخلية للمحل - تطوير المبرمج ساهر © 2026
+        </div>
+
+    </div>
+
+</body>
+</html>
